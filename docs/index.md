@@ -1,16 +1,11 @@
 # Vu Hoang Tue Anh
 
-I am a Computer Science student at VinUniversity. I have built projects spanning backend REST APIs, Kafka message queues, data pipelines and AI/multimodal systems, and I have a foundation in API testing.
-
-I am currently learning test automation with Playwright and Selenium, plus Agile/Scrum.
-
----
-
 ## 📞 Contact Information
 
 - **Phone:** [+84 933 256 166](tel:+84933256166)
 - **Email:** [24anh.vht@vinuni.edu.vn](mailto:24anh.vht@vinuni.edu.vn)
 - **Location:** Hanoi
+- **School:** VinUniversity, 3rd-year Computer Science student
 
 ---
 
