@@ -1,10 +1,8 @@
 # Vu Hoang Tue Anh
 
-## QA / Software Tester
+I am a Computer Science student at VinUniversity. I have built projects spanning backend REST APIs, Kafka message queues, data pipelines and AI/multimodal systems, and I have a foundation in API testing.
 
-I am a Computer Science student at VinUniversity with a foundation in **API testing**. I have built projects spanning backend REST APIs, Kafka message queues, data pipelines and AI/multimodal systems.
-
-I am currently learning test automation with Playwright and Selenium, plus Agile/Scrum, and I am eager to learn and grow in **software testing**.
+I am currently learning test automation with Playwright and Selenium, plus Agile/Scrum.
 
 ---
 
@@ -12,7 +10,7 @@ I am currently learning test automation with Playwright and Selenium, plus Agile
 
 - **Phone:** [+84 933 256 166](tel:+84933256166)
 - **Email:** [24anh.vht@vinuni.edu.vn](mailto:24anh.vht@vinuni.edu.vn)
-- **Location:** Gia Lam, Hanoi
+- **Location:** Hanoi
 
 ---
 
@@ -20,12 +18,16 @@ I am currently learning test automation with Playwright and Selenium, plus Agile
 
 | **Category** | **Skills & Technologies** |
 |---|---|
-| **Testing** | Manual Testing, Postman, Test Execution, Playwright, HTML, XPath locators, Webhooks |
-| **Currently learning** | Playwright and Selenium test automation, Agile/Scrum |
-| **Backend** | Python, Node.js, Express, REST APIs, PostgreSQL, Redis, Kafka, Elasticsearch |
-| **Data** | SQL queries, data pipelines |
-| **Tools** | Jira, Git, Docker |
-| **AI / ML** | PyTorch, Transformers, TRL, PEFT/LoRA, Faiss, vLLM |
+| **Languages** | Python, JavaScript (Node.js), SQL |
+| **Backend & APIs** | Node.js, Express, REST APIs, transactional outbox, idempotent consumers |
+| **Databases & Search** | PostgreSQL (transactions, row-level locking), Redis, Elasticsearch |
+| **Messaging & Streaming** | Apache Kafka, Debezium CDC, Apache Flink SQL |
+| **Data Engineering** | PySpark, dbt (star schema, SCD2), Great Expectations, Parquet, S3-compatible object storage, batch and streaming data pipelines |
+| **AI / LLMs** | PyTorch, Transformers, TRL, PEFT/LoRA, SFT, GRPO, CoT curation, vLLM, model evaluation |
+| **Retrieval & RAG** | Faiss (IVF), BGE-M3, bge-reranker-v2-m3, BM25, e5, VinAI Translate (VI→EN), scikit-learn, LightGBM |
+| **Multimodal** | CLIP, Gemini-2.5-Flash image captioning, visual question answering |
+| **Testing** | Manual Testing, Postman, Test Execution, Playwright, HTML, XPath locators, Webhooks, unit / integration / end-to-end testing |
+| **Tools** | Git, Docker, Docker Compose, Jira |
 
 ---
 
