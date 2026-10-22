@@ -1,0 +1,50 @@
+site_name: Vu Hoang Tue Anh
+site_description: Portfolio of Vu Hoang Tue Anh — QA / Software Tester
+site_url: https://tertueanhvu.github.io/
+copyright: © 2026 Vu Hoang Tue Anh
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.top
+    - toc.follow
+    - search.suggest
+    - search.highlight
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+nav:
+  - Portfolio: index.md
+  - Certifications: certifications.md
+
+# Project detail pages are linked from the Portfolio page, not shown as tabs.
+not_in_nav: |
+  /projects/*.md
