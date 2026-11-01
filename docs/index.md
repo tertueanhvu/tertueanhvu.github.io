@@ -32,9 +32,6 @@
 
 **Bachelor's Degree in Computer Science** | *2024 – Present*
 
-- 95% Merit-Based Scholarship; Dean's List, 2024–2025
-- Relevant coursework: Object-Oriented Programming, Database Systems, Artificial Intelligence, Machine Learning
-
 ---
 
 ## 🚀 Featured Projects
