@@ -35,7 +35,7 @@ In an online scam, victims are tricked into transferring money themselves, and t
 
 ## Status
 
-- [x] Literature review: federated and privacy-preserving financial-crime detection, including the U.S.–U.K. PETs Prize Challenge solutions
+- [x] Literature review: federated and privacy-preserving financial-crime detection
 - [x] System design and privacy parameters
 - [ ] **Prototype on synthetic data (next step)**
 - [ ] Evaluation against single-bank and centralised baselines
