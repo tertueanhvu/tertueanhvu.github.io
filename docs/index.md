@@ -80,6 +80,20 @@
 
 ---
 
+### FedMule — Privacy-Preserving Federated Learning for Mule-Account Detection
+
+**Research project** | *In progress*
+
+| **Aspect** | **Details** |
+|---|---|
+| **Project** | Lets banks jointly train a model that flags newly created scam mule accounts before victims report them, without any bank disclosing customer data. |
+| **Approach** | Federated learning across banks, with secure aggregation (SecAgg+) and differential privacy (DP-SGD); at transfer time, a risk score with reason codes warns the sender before the money leaves. |
+| **Status** | Literature review and system design done; prototype on synthetic data is next. |
+| **Planned Stack** | Python, PyTorch, Flower, Opacus, XGBoost |
+| **Details** | [Description, architecture and status →](projects/fedmule.md) |
+
+---
+
 ### MC-GRPO — Mode-Conditioned GRPO for Math Reasoning
 
 **LLM project** | *Completed · individual course project (COMP2050)*
