@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="880" viewBox="0 0 1800 880"><title>FedMule system architecture</title><defs><marker id="aFF3333" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 L3,5 z" fill="#FF3333"/></marker><marker id="a007FFF" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 L3,5 z" fill="#007FFF"/></marker><marker id="a555555" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 L3,5 z" fill="#555555"/></marker></defs>
+<rect width="1800" height="880" fill="#ffffff"/>
+<rect x="30" y="30" width="1740" height="400" rx="34" fill="#FDECEC" stroke="#E3A3A3" stroke-width="2.5" stroke-dasharray="10 7"/>
+<text x="70" y="82" font-family="Helvetica, Arial, sans-serif" font-size="30" font-weight="bold" text-anchor="start" fill="#FF1F1F">TRAINING</text>
+<text x="250" y="81" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" text-anchor="start" fill="#7a7a7a">federated rounds across banks · raw customer data never leaves a bank</text>
+<rect x="70" y="110" width="250" height="270" rx="8" fill="#fff" stroke="#333" stroke-width="1.8"/>
+<rect x="133" y="100" width="124" height="19" fill="#FFFF88" stroke="#000" stroke-width="1"/>
+<text x="195" y="114" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">Participating Banks</text>
+<path d="M92,138 v46 a28,8 0 0,0 56,0 v-46" fill="#FFE0B2" stroke="#D79B00" stroke-width="1.5"/>
+<ellipse cx="120" cy="138" rx="28" ry="8" fill="#FFE0B2" stroke="#D79B00" stroke-width="1.5"/>
+<text x="200" y="158" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" text-anchor="start" fill="#000">Bank A</text>
+<text x="200" y="175" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="start" fill="#555">accounts · transfers</text>
+<path d="M92,218 v46 a28,8 0 0,0 56,0 v-46" fill="#FFE0B2" stroke="#D79B00" stroke-width="1.5"/>
+<ellipse cx="120" cy="218" rx="28" ry="8" fill="#FFE0B2" stroke="#D79B00" stroke-width="1.5"/>
+<text x="200" y="238" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" text-anchor="start" fill="#000">Bank B</text>
+<text x="200" y="255" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="start" fill="#555">accounts · transfers</text>
+<path d="M92,298 v46 a28,8 0 0,0 56,0 v-46" fill="#FFE0B2" stroke="#D79B00" stroke-width="1.5"/>
+<ellipse cx="120" cy="298" rx="28" ry="8" fill="#FFE0B2" stroke="#D79B00" stroke-width="1.5"/>
+<text x="200" y="318" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" text-anchor="start" fill="#000">Bank C</text>
+<text x="200" y="335" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="start" fill="#555">accounts · transfers</text>
+<rect x="420" y="150" width="280" height="200" rx="8" fill="#FFF2CC" stroke="#D6B656" stroke-width="1.8"/>
+<rect x="505.8" y="140" width="108.39999999999999" height="19" fill="#FFFF88" stroke="#000" stroke-width="1"/>
+<text x="560" y="154" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">Local Training</text>
+<text x="560" y="198" font-family="Helvetica, Arial, sans-serif" font-size="17" font-weight="bold" text-anchor="middle" fill="#000">DP-SGD</text>
+<text x="560" y="222" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" fill="#333">per-record differential privacy</text>
+<text x="560" y="237" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" fill="#333">gradient clipping + noise</text>
+<text x="560" y="252" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" fill="#333">shared feature schema</text>
+<rect x="800" y="150" width="300" height="200" rx="8" fill="#F5F5F5" stroke="#666" stroke-width="1.8"/>
+<rect x="882.6" y="140" width="134.8" height="19" fill="#FFFF88" stroke="#000" stroke-width="1"/>
+<text x="950" y="154" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">Secure Aggregation</text>
+<path d="M941,208 v-7 a9,9 0 0,1 18,0 v7" fill="none" stroke="#3D7CC9" stroke-width="3"/>
+<rect x="936" y="208" width="28" height="22" rx="4" fill="#3D7CC9"/>
+<circle cx="950" cy="218" r="3.5" fill="#fff"/>
+<text x="950" y="262" font-family="Helvetica, Arial, sans-serif" font-size="17" font-weight="bold" text-anchor="middle" fill="#000">SecAgg+</text>
+<text x="950" y="285" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" fill="#333">server sees only the</text>
+<text x="950" y="300" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" fill="#333">sum of masked updates</text>
+<rect x="1200" y="150" width="260" height="200" rx="8" fill="#D5E8D4" stroke="#82B366" stroke-width="1.8"/>
+<rect x="1265.9" y="140" width="128.2" height="19" fill="#FFFF88" stroke="#000" stroke-width="1"/>
+<text x="1330" y="154" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">Global Mule Model</text>
+<text x="1330" y="198" font-family="Helvetica, Arial, sans-serif" font-size="17" font-weight="bold" text-anchor="middle" fill="#000">FedAvg</text>
+<text x="1330" y="222" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" fill="#333">account-level classifier</text>
+<text x="1330" y="237" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" fill="#333">(FedProx if data is non-IID)</text>
+<rect x="1540" y="150" width="190" height="200" rx="8" fill="#fff" stroke="#333" stroke-width="1.8"/>
+<rect x="1580.8" y="140" width="108.39999999999999" height="19" fill="#FFFF88" stroke="#000" stroke-width="1"/>
+<text x="1635" y="154" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">Privacy Ledger</text>
+<text x="1635" y="205" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#000">ε accountant</text>
+<text x="1635" y="235" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" fill="#333">tracks the privacy</text>
+<text x="1635" y="250" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" fill="#333">budget per cycle</text>
+<text x="1635" y="265" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" fill="#333"></text>
+<text x="1635" y="280" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" fill="#333">audit log of</text>
+<text x="1635" y="295" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" fill="#333">every round</text>
+<line x1="320" y1="250" x2="415" y2="250" stroke="#FF3333" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#aFF3333)"/>
+<text x="367.5" y="236" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#000">Train</text>
+<circle cx="367.5" cy="270" r="10" fill="#FF3333"/>
+<text x="367.5" y="274" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#fff">1</text>
+<line x1="700" y1="250" x2="795" y2="250" stroke="#FF3333" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#aFF3333)"/>
+<text x="747.5" y="236" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#000">Mask</text>
+<circle cx="747.5" cy="270" r="10" fill="#FF3333"/>
+<text x="747.5" y="274" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#fff">2</text>
+<line x1="1100" y1="250" x2="1195" y2="250" stroke="#FF3333" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#aFF3333)"/>
+<text x="1147.5" y="236" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#000">Aggregate</text>
+<circle cx="1147.5" cy="270" r="10" fill="#FF3333"/>
+<text x="1147.5" y="274" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#fff">3</text>
+<line x1="1460" y1="250" x2="1535" y2="250" stroke="#FF3333" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#aFF3333)"/>
+<text x="1497.5" y="236" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#000">Log ε</text>
+<circle cx="1497.5" cy="270" r="10" fill="#FF3333"/>
+<text x="1497.5" y="274" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#fff">4</text>
+<path d="M1330,350 V405 H195 V386" fill="none" stroke="#FF3333" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#aFF3333)"/>
+<text x="760" y="398" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#000">global model sent back to every bank for the next round</text>
+<circle cx="1330" cy="372" r="10" fill="#FF3333"/>
+<text x="1330" y="376" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#fff">5</text>
+<rect x="30" y="470" width="1740" height="380" rx="34" fill="#E8F0FB" stroke="#9DB7E0" stroke-width="2.5" stroke-dasharray="10 7"/>
+<text x="70" y="522" font-family="Helvetica, Arial, sans-serif" font-size="30" font-weight="bold" text-anchor="start" fill="#FF1F1F">AT TRANSFER TIME</text>
+<text x="395" y="521" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="bold" text-anchor="start" fill="#7a7a7a">per transfer · before money reaches the payee</text>
+<path d="M1330,405 V452 H1050 V585" fill="none" stroke="#555555" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#a555555)"/>
+<text x="1190" y="446" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#000">deploy model</text>
+<circle cx="110" cy="662" r="11" fill="#F6C89F" stroke="#333" stroke-width="1.4"/>
+<path d="M90,698 a20,20 0 0,1 40,0 z" fill="#5C6BC0" stroke="#333" stroke-width="1.4"/>
+<text x="110" y="730" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#000">customer enters</text>
+<text x="110" y="745" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#000">payee account</text>
+<rect x="230" y="590" width="230" height="160" rx="8" fill="#FFF2CC" stroke="#D6B656" stroke-width="1.8"/>
+<rect x="297.4" y="580" width="95.19999999999999" height="19" fill="#FFFF88" stroke="#000" stroke-width="1"/>
+<text x="345" y="594" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">Sending Bank</text>
+<text x="345" y="638" font-family="Helvetica, Arial, sans-serif" font-size="17" font-weight="bold" text-anchor="middle" fill="#000">Banking App</text>
+<text x="345" y="662" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" fill="#333">payee name lookup</text>
+<rect x="560" y="590" width="250" height="160" rx="8" fill="#F5F5F5" stroke="#666" stroke-width="1.8"/>
+<rect x="630.8" y="580" width="108.39999999999999" height="19" fill="#FFFF88" stroke="#000" stroke-width="1"/>
+<text x="685" y="594" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">Payment Switch</text>
+<text x="685" y="638" font-family="Helvetica, Arial, sans-serif" font-size="17" font-weight="bold" text-anchor="middle" fill="#000">NAPAS 247</text>
+<text x="685" y="662" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" fill="#333">routes the lookup to</text>
+<text x="685" y="677" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" fill="#333">the receiving bank</text>
+<rect x="910" y="590" width="280" height="160" rx="8" fill="#D5E8D4" stroke="#82B366" stroke-width="1.8"/>
+<rect x="979.3" y="580" width="141.39999999999998" height="19" fill="#FFFF88" stroke="#000" stroke-width="1"/>
+<text x="1050" y="594" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">Receiving Bank Node</text>
+<text x="1050" y="638" font-family="Helvetica, Arial, sans-serif" font-size="17" font-weight="bold" text-anchor="middle" fill="#000">Mule Score</text>
+<text x="1050" y="662" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" fill="#333">global model scores the payee</text>
+<text x="1050" y="677" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" fill="#333">shares only a noisy risk band</text>
+<text x="1050" y="692" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" fill="#333">(randomized response)</text>
+<rect x="1290" y="590" width="250" height="160" rx="8" fill="#FAD7AC" stroke="#D79B00" stroke-width="1.8"/>
+<rect x="1354.2" y="580" width="121.6" height="19" fill="#FFFF88" stroke="#000" stroke-width="1"/>
+<text x="1415" y="594" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">Risk Scoring Hub</text>
+<text x="1415" y="638" font-family="Helvetica, Arial, sans-serif" font-size="17" font-weight="bold" text-anchor="middle" fill="#000">Score 0–999</text>
+<text x="1415" y="662" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" fill="#333">network flow features</text>
+<text x="1415" y="677" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" fill="#333">+ noisy risk band</text>
+<text x="1415" y="692" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="middle" fill="#333">→ score + reason codes</text>
+<path d="M1655,629 L1683,677 L1627,677 z" fill="#FFD54F" stroke="#E65100" stroke-width="2.5" stroke-linejoin="round"/>
+<text x="1655" y="670" font-family="Helvetica, Arial, sans-serif" font-size="26" font-weight="bold" text-anchor="middle" fill="#BF360C">!</text>
+<text x="1655" y="712" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#000">warning before</text>
+<text x="1655" y="727" font-family="Helvetica, Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#000">the transfer</text>
+<line x1="150" y1="670" x2="225" y2="670" stroke="#007FFF" stroke-width="2" marker-end="url(#a007FFF)"/>
+<circle cx="188" cy="690" r="10" fill="#007FFF"/>
+<text x="188" y="694" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#fff">1</text>
+<line x1="460" y1="670" x2="555" y2="670" stroke="#007FFF" stroke-width="2" marker-end="url(#a007FFF)"/>
+<text x="507.5" y="656" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#000">Look up</text>
+<circle cx="507.5" cy="690" r="10" fill="#007FFF"/>
+<text x="507.5" y="694" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#fff">2</text>
+<line x1="810" y1="670" x2="905" y2="670" stroke="#007FFF" stroke-width="2" marker-end="url(#a007FFF)"/>
+<text x="857.5" y="656" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#000">Ask</text>
+<circle cx="857.5" cy="690" r="10" fill="#007FFF"/>
+<text x="857.5" y="694" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#fff">3</text>
+<line x1="1190" y1="670" x2="1285" y2="670" stroke="#007FFF" stroke-width="2" marker-end="url(#a007FFF)"/>
+<text x="1237.5" y="656" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#000">Band</text>
+<circle cx="1237.5" cy="690" r="10" fill="#007FFF"/>
+<text x="1237.5" y="694" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#fff">4</text>
+<line x1="1540" y1="670" x2="1615" y2="670" stroke="#007FFF" stroke-width="2" marker-end="url(#a007FFF)"/>
+<text x="1577.5" y="656" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#000">Warn</text>
+<circle cx="1577.5" cy="690" r="10" fill="#007FFF"/>
+<text x="1577.5" y="694" font-family="Helvetica, Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#fff">5</text>
+<text x="1740" y="830" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" font-style="italic" text-anchor="end" fill="#C25E00">Design stage · work in progress</text></svg>
